@@ -115,5 +115,20 @@
             </dl>
         </aside>
     </main>
+    <button id="abrir-reserva">Reservar mesa</button>
+    <dialog id="dialog-reserva">
+    <h3>Solicitud de reserva</h3>
+    <ul>
+        <li>Max. 6 personas</li>
+        <li>15 min de cortesia</li>
+    </ul>
+    <button id="cerrar-reserva">Cerrar</button>
+    </dialog>
+    
+    <script>
+    const dialog = document.getElementById('dialog-reserva');
+    document.getElementById('abrir-reserva').onclick = () => dialog.showModal();
+    document.getElementById('cerrar-reserva').onclick = () => dialog.close();
+    </script>
 </body>
 </html>
